@@ -23,6 +23,9 @@ http://www.colourlovers.com/palette/848743/(_”_)
 
 header {
   padding: 1em;
+  max-width: 860px;
+  margin: 0 auto;
+  height: 30vh;
 }
 /*header [class^="col"] {
   padding-top: 2em; 
@@ -46,6 +49,8 @@ header .logo {
 }
 section {
   padding: 6em 2em;
+  max-width: 860px;
+  margin: 0 auto;
 }
 section .box {
   background: #fff;
@@ -121,7 +126,8 @@ nav {
   width: 100%;
 }
 nav .nav {
-  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
 }
 nav .nav li {
   width: 100%;
