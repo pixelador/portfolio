@@ -22,10 +22,7 @@ http://www.colourlovers.com/palette/848743/(_”_)
 */
 
 header {
-  padding: 1em;
-  max-width: 860px;
-  margin: 0 auto;
-  height: 30vh;
+
 }
 /*header [class^="col"] {
   padding-top: 2em; 
@@ -47,6 +44,21 @@ header .container {
 header .logo {
   max-width: 7em;
 }
+header .nav {
+  text-align: center;
+}
+header .nav .social a {
+  width: 2em;
+  height: 2em;
+}
+header .blurb a {
+  display: inline-block;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0.125em;
+}
 section {
   padding: 6em 2em;
   max-width: 860px;
@@ -63,6 +75,7 @@ section .box {
 }
 #about .box {
   border-bottom: solid 1em #BD1550;
+  border-top: solid 1em #BD1550;
 }
 #about h2 {
   color: #BD1550;
@@ -120,14 +133,13 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: contain;
 }
-nav {
+/*nav {
   position: absolute;
   top: 60px;
   width: 100%;
-}
+}*/
 nav .nav {
-  max-width: 860px;
-  margin: 0 auto;
+  
 }
 nav .nav li {
   width: 100%;
@@ -176,9 +188,22 @@ nav .nav li a {
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
-  nav {
+  /*nav {
     position: static;
     margin-bottom: 3em;
+  }*/
+  header {
+    padding: 10em 1em;
+    max-width: 860px;
+    margin: 0 auto;
+    height: 20em;
+  }
+  nav .nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    margin: 0 auto;
   }
   .nav li {
     display: inline-block;

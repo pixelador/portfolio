@@ -8,13 +8,13 @@
     var resizeTimer;
 
     $(document).scroll( function() {
-        if ($(this).scrollTop() > offset) {
-            $nav.addClass("fixed_nav");
-            $("#about").css('margin-top', y_height);
-        } else {
-            $nav.removeClass("fixed_nav");
-            $("#about").removeAttr('style');
-        }
+        // if ($(this).scrollTop() > offset) {
+        //     $nav.addClass("fixed_nav");
+        //     $("#about").css('margin-top', y_height);
+        // } else {
+        //     $nav.removeClass("fixed_nav");
+        //     $("#about").removeAttr('style');
+        // }
 
     });
 
