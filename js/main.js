@@ -3,6 +3,7 @@
     var $ = window.jQuery;
     var $nav = $("nav");
     var $toggle = $(".toggle-menu");
+    var $navLink = $("nav .nav li a");
     var offset = $nav.offset().top;
     var y_height = $nav.outerHeight(true);
     var resizeTimer;
@@ -15,13 +16,14 @@
         //     $nav.removeClass("fixed_nav");
         //     $("#about").removeAttr('style');
         // }
-
     });
 
     $toggle.click(function() {
-        $nav.toggle();
+        $nav.slideToggle(500);
     });
-
+    $navLink.click(function() {
+        $nav.slideToggle(200);
+    });
     $(document).resize( function() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function(e) {
