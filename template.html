@@ -11,18 +11,19 @@
 </head>
 
 <body>
-    <div class="toggle-menu hidden-md">
+    <div class="toggle-menu">
+      <div class="container">
       <svg width="60px" height="44px" viewBox="0 0 60 44" xmlns="http://www.w3.org/2000/svg" version="1.1">
         <desc>Menu</desc>
         <line stroke="rgba(255, 255, 255, 1.0)" stroke-width="3" x1="10" y1="10" x2="50" y2="10" />
         <line stroke="rgba(255, 255, 255, 1.0)" stroke-width="3" x1="10" y1="22" x2="50" y2="22" />
-        <line stroke="rgba(255, 255, 255, 1.0)" stroke-width="3" x1="10" y1="34" x2="50" y2="34" /></svg></div>
-  <nav class="hidden-sm">
+        <line stroke="rgba(255, 255, 255, 1.0)" stroke-width="3" x1="10" y1="34" x2="50" y2="34" /></svg></div></div>
+  <nav>
     <ul class="nav easing-transition">
       <li><a href="#about" class="about">About</a></li><li><a href="#work" class="work">Work</a></li><li><a href="#" class="blog">Blog</a></li><li><a href="#contact" class="contact">Contact</a></li>
     </ul>
   </nav>
-  <header>
+  <header id="top">
     <div class="container">
       <div class="row">
         <div class="col-2">
@@ -38,22 +39,22 @@
         </div>
       </div>
     </div>
-    <ul class="nav">
-      <li class="social">
+    <ul class="nav social">
+      <li>
         <a href="#" class="git"><img src="img/github-logo.svg" alt="Github logo"></a>
       </li>
-      <li class="social">
+      <li>
         <a href="#" class="fcc"><img src="img/freecodecamp-logo.svg" alt="Free Code Camp logo"></a>
       </li>
-      <li class="social">
+      <li>
         <a href="#" class="twt"><img src="img/twitter-logo.svg" alt="Twitter logo"></a>
       </li>
-      <li class="social">
+      <li>
         <a href="#" class="cpn"><img src="img/codepen-logo.svg" alt="Codepen logo"></a>
       </li>
     </ul>
-    <div style="width: 100px; margin: 2em auto;">
-      <a href="#">
+    <div class="down-arrow">
+      <a href="#about">
         <svg width="100px" height="50px" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <desc>down arrow</desc>
 
@@ -84,6 +85,17 @@
       </div>
     </div>
   </section>
+  <div class="down-arrow">
+      <a href="#work">
+        <svg width="100px" height="50px" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <desc>down arrow</desc>
+
+          <polyline fill="none" stroke="rgba(255, 255, 255, 0.5)" stroke-width="2" points="10,10 50,30 90,10" />
+          <polyline fill="none" stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" points="10,12 50,32 90,12" />
+
+        </svg>
+      </a>
+    </div>
   <section id="work">
     <div class="box">
       <div class="container">
@@ -117,6 +129,17 @@
       </div>
     </div>
   </section>
+  <div class="down-arrow">
+      <a href="#contact">
+        <svg width="100px" height="50px" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <desc>down arrow</desc>
+
+          <polyline fill="none" stroke="rgba(255, 255, 255, 0.5)" stroke-width="2" points="10,10 50,30 90,10" />
+          <polyline fill="none" stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" points="10,12 50,32 90,12" />
+
+        </svg>
+      </a>
+    </div>
   <section id="contact">
     <div class="box">
       <div class="container">
@@ -135,6 +158,17 @@
       </div>
     </div>
   </section>
+  <div class="down-arrow">
+      <a href="#top">
+        <svg width="100px" height="50px" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <desc>down arrow</desc>
+
+          <polyline fill="none" stroke="rgba(255, 255, 255, 0.5)" stroke-width="2" points="10,30 50,10 90,30" />
+          <polyline fill="none" stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" points="10,32 50,12 90,32" />
+
+        </svg>
+      </a>
+    </div>
   <footer>
     <div class="container">
       <div class="row">
@@ -145,17 +179,17 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>-->
-          <ul class="nav">
-            <li class="social">
+          <ul class="nav social">
+            <li>
               <a href="#" class="git"><img src="img/github-logo.svg" alt="Github logo"></a>
             </li>
-            <li class="social">
+            <li>
               <a href="#" class="fcc"><img src="img/freecodecamp-logo.svg" alt="Free Code Camp logo"></a>
             </li>
-            <li class="social">
+            <li>
               <a href="#" class="twt"><img src="img/twitter-logo.svg" alt="Twitter logo"></a>
             </li>
-            <li class="social">
+            <li>
               <a href="#" class="cpn"><img src="img/codepen-logo.svg" alt="Codepen logo"></a>
             </li>
           </ul>
