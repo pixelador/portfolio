@@ -19,7 +19,7 @@
     });
     $(document).resize( function() {
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function(e) {
+        resizeTimer = setTimeout(function() {
             if($(window).width() > 720) {
                 $nav.show();
             } else {
