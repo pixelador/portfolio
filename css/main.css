@@ -33,13 +33,6 @@ http://www.colourlovers.com/palette/848743/(_”_)
 #8A9B0F // green
 */
 
-/*header [class^="col"] {
-  padding-top: 2em; 
-}*/
-/*header [class^="col"] img {
-  width: 100%;
-  height: auto;
-}*/
 header {
   padding-top: 60px;
 }
@@ -49,10 +42,6 @@ header [class^="col"] .title {
 header .row [class^="col"]:first-child {
   text-align: center;
 }
-/*header .container {
-  margin: 0 auto;
-  width: 100%;
-}*/
 header .logo {
   max-width: 7em;
   margin-top: 1em;
@@ -246,10 +235,6 @@ nav .nav li a {
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
-  /*nav {
-    position: static;
-    margin-bottom: 3em;
-  }*/
   header {
     padding: 25vh 1em 1em;
     margin: 0 auto;
