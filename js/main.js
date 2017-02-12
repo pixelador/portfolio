@@ -4,19 +4,11 @@
     var $nav = $("nav");
     var $toggle = $(".toggle-menu");
     var $navLink = $("nav .nav li a");
-    // var offset = $nav.offset().top;
-    // var y_height = $nav.outerHeight(true);
+    var $the_title = $("header .title");
     var resizeTimer;
 
     $(document).scroll( function() {
         $nav.slideUp(200);
-        // if ($(this).scrollTop() > offset) {
-        //     $nav.addClass("fixed_nav");
-        //     $("#about").css('margin-top', y_height);
-        // } else {
-        //     $nav.removeClass("fixed_nav");
-        //     $("#about").removeAttr('style');
-        // }
     });
 
     $toggle.click(function() {
@@ -48,5 +40,13 @@
         }
     }
     });
+
+    $the_title.hover( 
+        function() {
+            $(this).css('opacity', 0.0).html("Is it me you're looking for?").fadeTo('slow', 1.0);
+        }, function() {
+            $(this).css('opacity', 0.0).html("Hello.").fadeTo('slow', 1.0);
+        }
+    );
 
 })(window);
