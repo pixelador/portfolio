@@ -115,6 +115,20 @@ header {
     }
 }
 
+.blog {
+    header {
+        .logo {
+            max-width: 4em;
+        }
+        .nav {
+            margin: 0;
+        }
+    }
+    #blog {
+        padding-top: 0;
+    }
+}
+
 section {
     padding: 5em 1em 0;
     margin: 0 auto;
@@ -163,6 +177,15 @@ section {
     }
     h2 {
         color: $color__green;
+    }
+}
+#blog {
+    .box {
+        border-color:$color__purple;
+        padding-top: 4em;
+    }
+    h2 {
+        color: $color__purple;
     }
 }
 #contact {
@@ -271,8 +294,12 @@ nav {
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
+  .home {
+    header {
+        padding: 25vh 1em 1em;    
+    }
+  }
   header {
-    padding: 25vh 1em 1em;
     margin: 0 auto;
   }
   header .logo {
@@ -296,17 +323,25 @@ nav {
   }
 }
 @media only screen and (min-width: 45em) and (orientation: portrait) {
+    .home {
+        header {
+            height: 100vh;
+        }
+    }
   header,
   section {
     width: 100vw;
-    height: 100vh;
   }
 }
 @media only screen and (min-width: 60em) { /* 960px */
+  .home {
+      header {
+        height: 100vh;
+      }
+  }
   header,
   section {
     width: 80vw;
-    height: 100vh;
   }
   nav {
     right: 7%;
