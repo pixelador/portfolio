@@ -90,14 +90,6 @@ header {
         max-width: 7em;
         margin-top: 1em;
     }
-    .nav {
-        text-align: center;
-        margin: 2em 0;
-    }
-    .nav.social a img {
-        width: 2em;
-        height: 2em;
-    }
     .blurb {
         p {
             line-height: 2em;
@@ -225,7 +217,7 @@ footer {
             display: block;
         a {
             display: block;
-            padding: .5em 1em;
+            padding: .5em;
             text-decoration: none;
             font-size: 1.25em;
             float: left;
@@ -276,13 +268,25 @@ nav {
   max-width: unset;
 }
 .nav.social {
+    margin: 1em;
+
     li {
-        display: inline-block;
+        display: block;
+        text-align: left;
+        float: none;
         a {
-            display: inline-block;
+            display: block;
+            float: none;
+            img {
+                margin-right: 1em;
+                vertical-align: middle;
+                width: 2em;
+                height: auto;
+            }
         }
     }
-} 
+}
+
 .down-arrow {
   width: 100px;
   margin: 2em auto 0em;
@@ -290,6 +294,19 @@ nav {
 @media only screen and (min-width: 33.75em) {
   nav {
     width: 75%;
+  }
+  .nav {
+      li {
+          a {
+              padding: 0.5em 1em;
+            //   span {
+            //       display: block;
+            //       font-size: 0.75em;
+            //       text-transform: uppercase;
+            //       font-weight: normal;
+            //   }
+          }
+      }
   }
 }
 
