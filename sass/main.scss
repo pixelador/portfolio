@@ -161,6 +161,11 @@ section {
 #about {
     .box {
         border-color: $color__pink;
+        .portrait {
+            width: 14em;
+            height: auto;
+            border-radius: 0.5em;
+        }
     }
     h2 {
         color: $color__pink;
@@ -373,5 +378,12 @@ nav {
   }
   nav {
     right: 7%;
+  }
+  .nav {
+      &.social {
+          li {
+              float: left;
+          }
+      }
   }
 }
