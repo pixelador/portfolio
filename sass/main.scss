@@ -162,9 +162,10 @@ section {
     .box {
         border-color: $color__pink;
         .portrait {
-            width: 14em;
+            width: 100%;
             height: auto;
             border-radius: 0.5em;
+            margin: 0;
         }
     }
     h2 {
@@ -175,15 +176,35 @@ section {
     .box {
         border-color:$color__green;
         padding-top: 4em;
+        .row {
+            margin: 0 0 2em;
+            h5 {
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 0;
+            }
+            .button {
+                background: $color__purple;
+                padding: 0.5em 1em;
+                border-radius: 0.5em;
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: $color__orange;
+                }
+            }
+        }
     }
     h2 {
         color: $color__green;
     }
     .sample {
             img {
-                box-shadow: 0 0 6px #666;
+                // box-shadow: 0 0 6px #666;
                 width: 100%;
                 height: auto;
+                margin: 0;
             }
     }
 }
@@ -354,6 +375,15 @@ nav {
   section .box .title {
     font-size: 3em;
   }
+  #about {
+      .box {
+          .portrait {
+              width: 14em;
+              float: right;
+              margin: 1em;
+          }
+      }
+  }
 }
 @media only screen and (min-width: 45em) and (orientation: portrait) {
     .home {
@@ -382,7 +412,7 @@ nav {
   .nav {
       &.social {
           li {
-              float: left;
+              display: inline-block;
           }
       }
   }
