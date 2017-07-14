@@ -17,16 +17,16 @@
     $navLink.click(function() {
         $nav.slideToggle(200);
     });
-    $(document).resize( function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-            if($(window).width() > 720) {
-                $nav.show();
-            } else {
-                $nav.hide();
-            }
-        }, 250);
-    });
+    // $(document).resize( function() {
+    //     clearTimeout(resizeTimer);
+    //     resizeTimer = setTimeout(function() {
+    //         if($(window).width() > 720) {
+    //             $nav.show();
+    //         } else {
+    //             $nav.hide();
+    //         }
+    //     }, 250);
+    // });
 
     $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
